@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #1e3a6e; /* biru navy logo Yomunusa */
+  --color-accent: #e88b8b; /* pink tombol start reading */
+  --font-logo: "Irish Grover", cursive;
+}
