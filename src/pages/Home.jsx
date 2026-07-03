@@ -10,7 +10,7 @@ export default function Home() {
       <section className="flex min-h-[calc(100vh-65px)] flex-col items-center px-4 text-center">
         <div className="flex flex-col items-center gap-5 pt-20 md:pt-28">
           <h1>
-            <Logo icon="h-16 md:h-24" text="text-6xl md:text-8xl" />
+            <Logo icon="h-12 sm:h-16 md:h-24" text="text-5xl sm:text-6xl md:text-8xl" />
           </h1>
           <p className="text-lg text-brand md:text-2xl">
             Practice N5-N4 Japanese Reading Through Indonesian Folklore.
