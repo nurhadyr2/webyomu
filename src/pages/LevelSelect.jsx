@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { getStoriesByLevel } from '../data'
+import { useLanguage } from '../i18n/LanguageContext'
 
 function LevelRow({ level }) {
+  const { lang, t } = useLanguage()
   const stories = getStoriesByLevel(level)
   return (
     <div className="mb-10">
@@ -17,12 +19,12 @@ function LevelRow({ level }) {
             <img
               key={s.slug}
               src={s.cover}
-              alt={s.title.id}
+              alt={s.title[lang]}
               className="h-24 w-32 rounded bg-pink-100 object-cover"
             />
           ))}
           {stories.length === 0 && (
-            <p className="text-gray-500">Coming soon…</p>
+            <p className="text-gray-500">{t.comingSoon}</p>
           )}
         </div>
         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow">
@@ -34,10 +36,11 @@ function LevelRow({ level }) {
 }
 
 export default function LevelSelect() {
+  const { t } = useLanguage()
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
       <h1 className="mb-10 text-center text-3xl font-extrabold text-brand">
-        CHOOSE YOUR LEVEL
+        {t.chooseLevel}
       </h1>
       <LevelRow level="N5" />
       <LevelRow level="N4" />

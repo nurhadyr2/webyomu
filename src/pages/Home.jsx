@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import Logo from '../components/Logo'
+import { useLanguage } from '../i18n/LanguageContext'
 
 export default function Home() {
+  const { t } = useLanguage()
   return (
     <div>
       {/* Hero */}
@@ -12,9 +14,7 @@ export default function Home() {
           <h1>
             <Logo icon="h-12 sm:h-16 md:h-24" text="text-5xl sm:text-6xl md:text-8xl" />
           </h1>
-          <p className="text-lg text-brand md:text-2xl">
-            Practice N5-N4 Japanese Reading Through Indonesian Folklore.
-          </p>
+          <p className="text-lg text-brand md:text-2xl">{t.tagline}</p>
         </div>
 
         <Link
@@ -29,7 +29,7 @@ export default function Home() {
               style={{ fontFamily: 'inherit' }}
             >
               <textPath href="#startArc" startOffset="50%" textAnchor="middle">
-                Start Reading
+                {t.startReading}
               </textPath>
             </text>
           </svg>

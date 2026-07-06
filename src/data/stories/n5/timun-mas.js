@@ -1,17 +1,12 @@
-export default {
+import { buildStory } from '../../builder'
+
+export default buildStory({
   slug: 'timun-mas',
   level: 'N5',
+  folder: 'timun mas',
   title: { jp: 'ティムン・マス', id: 'Timun Mas', en: 'Timun Mas' },
   region: 'Jawa Tengah',
-  cover: '/images/stories/timun-mas/cover.png',
-  pages: [
-    {
-      image: '/images/stories/timun-mas/1.png',
-      text: 'むかしむかし、あるところに おばあさんが いました。おばあさんは こどもが ほしかったです。',
-    },
-    {
-      image: '/images/stories/timun-mas/2.png',
-      text: 'あるひ、おおきい きゅうりを みつけました。なかに かわいい あかちゃんが いました。',
-    },
+  texts: [
+    // isi teks Jepang per halaman di sini
   ],
-}
+})

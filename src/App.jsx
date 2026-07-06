@@ -6,10 +6,12 @@ import StoryList from './pages/StoryList'
 import StoryReader from './pages/StoryReader'
 import WhatsYomunusa from './pages/WhatsYomunusa'
 import AboutUs from './pages/AboutUs'
+import { LanguageProvider } from './i18n/LanguageContext'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
       <Navbar />
       <main>
         <Routes>
@@ -21,6 +23,7 @@ export default function App() {
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </main>
-    </BrowserRouter>
+      </BrowserRouter>
+    </LanguageProvider>
   )
 }

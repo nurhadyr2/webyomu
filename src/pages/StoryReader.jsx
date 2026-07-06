@@ -3,9 +3,11 @@ import { Link, useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { loadStory } from '../data'
+import { useLanguage } from '../i18n/LanguageContext'
 
 export default function StoryReader() {
   const { slug } = useParams()
+  const { lang, t } = useLanguage()
   const [story, setStory] = useState(null)
   // page -1 = halaman cover (judul + asal daerah)
   const [page, setPage] = useState(-1)
@@ -17,7 +19,7 @@ export default function StoryReader() {
   }, [slug])
 
   if (!story) {
-    return <p className="py-20 text-center text-gray-500">Loading…</p>
+    return <p className="py-20 text-center text-gray-500">{t.loading}</p>
   }
 
   const isCover = page === -1
@@ -32,7 +34,7 @@ export default function StoryReader() {
           to={`/level/${story.level.toLowerCase()}`}
           className="text-sm font-semibold text-brand"
         >
-          Select Story
+          {t.selectStory}
         </Link>
       </div>
 
@@ -41,10 +43,10 @@ export default function StoryReader() {
           <div className="mx-auto flex flex-col items-center gap-4 text-center">
             <img
               src={story.cover}
-              alt={story.title.id}
+              alt={story.title[lang]}
               className="max-h-72 rounded bg-pink-100 object-contain"
             />
-            <h1 className="text-2xl font-bold text-brand">{story.title.id}</h1>
+            <h1 className="text-2xl font-bold text-brand">{story.title[lang]}</h1>
             <p className="text-gray-600">{story.region}</p>
           </div>
         ) : (

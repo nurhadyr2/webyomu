@@ -1,32 +1,20 @@
-// Daftar semua cerita — hanya metadata untuk halaman list.
-// Isi cerita (pages) di-lazy load lewat loader() saat dibaca.
-export const stories = [
-  {
-    slug: 'timun-mas',
-    level: 'N5',
-    title: { jp: 'ティムン・マス', id: 'Timun Mas', en: 'Timun Mas' },
-    region: 'Jawa Tengah',
-    cover: '/images/stories/timun-mas/cover.png',
-    loader: () => import('./stories/n5/timun-mas.js'),
-  },
-  {
-    slug: 'malin-kundang',
-    level: 'N4',
-    title: { jp: 'マリン・クンダン', id: 'Malin Kundang', en: 'Malin Kundang' },
-    region: 'Sumatera Barat',
-    cover: '/images/stories/malin-kundang/cover.png',
-    loader: () => import('./stories/n4/malin-kundang.js'),
-  },
-]
+// Auto-kumpulkan semua file cerita di stories/**. Tambah cerita baru cukup
+// dengan membuat file baru di folder n5/ atau n4/ — tidak perlu daftar manual.
+const storyModules = import.meta.glob('./stories/**/*.js', { eager: true })
+
+const levelOrder = { N5: 0, N4: 1 }
+
+export const stories = Object.values(storyModules)
+  .map((m) => m.default)
+  .sort((a, b) => {
+    if (a.level !== b.level) return levelOrder[a.level] - levelOrder[b.level]
+    return a.title.id.localeCompare(b.title.id)
+  })
 
 export const getStoriesByLevel = (level) =>
   stories.filter((s) => s.level.toLowerCase() === level.toLowerCase())
 
 export const getStoryMeta = (slug) => stories.find((s) => s.slug === slug)
 
-export const loadStory = async (slug) => {
-  const meta = getStoryMeta(slug)
-  if (!meta) return null
-  const mod = await meta.loader()
-  return mod.default
-}
+// Dipertahankan async agar StoryReader tetap kompatibel.
+export const loadStory = async (slug) => getStoryMeta(slug) || null
