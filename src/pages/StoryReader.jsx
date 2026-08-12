@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { loadStory } from '../data'
 import { useLanguage } from '../i18n/LanguageContext'
+import JapaneseText from '../components/JapaneseText'
 
 export default function StoryReader() {
   const { slug } = useParams()
-  const { lang, t } = useLanguage()
+  const { t } = useLanguage()
   const [story, setStory] = useState(null)
   // page -1 = halaman cover (judul + asal daerah)
   const [page, setPage] = useState(-1)
@@ -43,11 +44,12 @@ export default function StoryReader() {
           <div className="mx-auto flex flex-col items-center gap-4 text-center">
             <img
               src={story.cover}
-              alt={story.title[lang]}
+              alt={story.title.id}
               className="max-h-72 rounded bg-pink-100 object-contain"
             />
-            <h1 className="text-2xl font-bold text-brand">{story.title[lang]}</h1>
-            <p className="text-gray-600">{story.region}</p>
+            <JapaneseText as="h1" className="text-2xl font-bold text-brand">{story.title.jp}</JapaneseText>
+            <p className="text-lg text-gray-600">「{story.title.id}」</p>
+            <JapaneseText as="p" className="font-semibold text-brand">{story.regionJp}の話[はなし]</JapaneseText>
           </div>
         ) : (
           <div className="flex w-full flex-col items-center gap-6 md:flex-row">
@@ -56,9 +58,9 @@ export default function StoryReader() {
               alt=""
               className="max-h-80 w-full rounded bg-pink-100 object-contain md:w-1/2"
             />
-            <p className="w-full text-lg leading-loose text-gray-800 md:w-1/2">
+            <JapaneseText as="p" className="w-full text-lg leading-[2.6] text-gray-800 md:w-1/2">
               {current.text}
-            </p>
+            </JapaneseText>
           </div>
         )}
 

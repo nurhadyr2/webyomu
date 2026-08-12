@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { getStoriesByLevel } from '../data'
 import { useLanguage } from '../i18n/LanguageContext'
+import JapaneseText from '../components/JapaneseText'
 
 export default function StoryList() {
   const { level } = useParams()
@@ -20,12 +21,13 @@ export default function StoryList() {
           <Link key={s.slug} to={`/story/${s.slug}`} className="group">
             <img
               src={s.cover}
-              alt={s.title[lang]}
+              alt={s.title.id}
               className="aspect-[4/3] w-full rounded bg-pink-100 object-cover transition group-hover:scale-105"
             />
-            <p className="mt-2 text-center text-sm font-semibold text-brand">
-              {s.title[lang]}
-            </p>
+            <JapaneseText as="p" className="mt-2 text-center text-sm font-semibold text-brand">
+              {s.title.jp}
+            </JapaneseText>
+            {lang !== 'jp' && <p className="mt-1 text-center text-xs text-gray-500">{s.title[lang]}</p>}
           </Link>
         ))}
         {stories.length === 0 && (

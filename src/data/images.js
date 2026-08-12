@@ -1,4 +1,4 @@
-const modules = import.meta.glob("../assets/ilustrasi/**/*.png", {
+const modules = import.meta.glob("../assets/final/**/*.png", {
   eager: true,
   query: "?url",
   import: "default",
@@ -10,7 +10,7 @@ const firstNumber = (str) => {
 };
 
 export function getImages(level, folder) {
-  const prefix = `../assets/ilustrasi/${level}/${folder}/`;
+  const prefix = `../assets/final/${level}/${folder}/`;
   return Object.entries(modules)
     .filter(([path]) => path.startsWith(prefix))
     .sort(([a], [b]) => firstNumber(a) - firstNumber(b))
