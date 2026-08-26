@@ -1,11 +1,31 @@
 import storyCatalog from './stories/catalog'
 
-const levelOrder = { N5: 0, N4: 1 }
+const storyOrder = [
+  'banyuwangi',
+  'semarang',
+  'roro-jonggrang',
+  'manik-angkeran',
+  'tangkuban-perahu',
+  'kebo-iwa',
+  'danau-toba',
+  'raja-ampat',
+  'legenda-surabaya',
+  'rawa-pening',
+  'putri-junjung-buih',
+  'batu-badaong',
+  'lutung-kasarung',
+  'timun-mas',
+  'bawang-merah-bawang-putih',
+  'ande-ande-lumut',
+  'ratu-ular',
+  'batu-menangis',
+  'putri-mambang-limau',
+  'malin-kundang',
+]
 
-export const stories = storyCatalog.sort((a, b) => {
-  if (a.level !== b.level) return levelOrder[a.level] - levelOrder[b.level]
-  return a.title.id.localeCompare(b.title.id)
-})
+export const stories = storyCatalog.sort(
+  (a, b) => storyOrder.indexOf(a.slug) - storyOrder.indexOf(b.slug),
+)
 
 export const getStoriesByLevel = (level) =>
   stories.filter((story) => story.level.toLowerCase() === level.toLowerCase())
