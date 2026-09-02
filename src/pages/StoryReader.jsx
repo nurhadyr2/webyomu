@@ -24,8 +24,10 @@ export default function StoryReader() {
   }
 
   const isCover = page === -1
-  const current = isCover ? null : story.pages[page]
-  const hasNext = page < story.pages.length - 1
+  const hasGlossary = story.glossary.length > 0
+  const isGlossary = hasGlossary && page === story.pages.length
+  const current = isCover || isGlossary ? null : story.pages[page]
+  const hasNext = page < story.pages.length - 1 || (hasGlossary && page < story.pages.length)
   const hasPrev = page > -1
 
   return (
@@ -51,6 +53,25 @@ export default function StoryReader() {
             <p className="text-lg text-gray-600">「{story.title[lang]}」</p>
             <JapaneseText as="p" className="font-semibold text-brand">{story.regionJp}の話[はなし]</JapaneseText>
           </div>
+        ) : isGlossary ? (
+          <section className="glossary-slide" aria-labelledby="glossary-title">
+            <div className="glossary-heading">
+              <p>{story.title[lang]}</p>
+              <h1 id="glossary-title">{t.glossary}</h1>
+            </div>
+            <div className="glossary-table" role="table" aria-label={`${story.title[lang]} ${t.glossary}`}>
+              <div className="glossary-row glossary-header" role="row">
+                <span role="columnheader">{t.glossaryTerm}</span>
+                <span role="columnheader">{t.glossaryMeaning}</span>
+              </div>
+              {story.glossary.map((item, index) => (
+                <div className="glossary-row" role="row" key={`${item.term}-${index}`}>
+                  <JapaneseText as="span" role="cell">{item.term}</JapaneseText>
+                  <span role="cell">{item.meaning}</span>
+                </div>
+              ))}
+            </div>
+          </section>
         ) : (
           <div className="flex w-full flex-col items-center gap-6 md:flex-row">
             <img
@@ -73,7 +94,7 @@ export default function StoryReader() {
             <FontAwesomeIcon icon={faArrowLeft} />
           </button>
         )}
-        {hasNext || isCover ? (
+        {hasNext ? (
           <button
             onClick={() => setPage(page + 1)}
             className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow"
@@ -84,7 +105,7 @@ export default function StoryReader() {
         ) : null}
       </div>
 
-      {!isCover && (
+      {!isCover && !isGlossary && (
         <p className="mt-3 text-center text-sm text-gray-500">
           {page + 1} / {story.pages.length}
         </p>

@@ -16,6 +16,9 @@ export const translations = {
     switchLanguage: 'Switch to Indonesian',
     previousPage: 'Previous page',
     nextPage: 'Next page',
+    glossary: 'Glossary',
+    glossaryTerm: 'Japanese',
+    glossaryMeaning: 'Meaning',
     whatsBody: [
       'Yomunusa is a final project developed to help beginner Japanese learners (N5–N4) improve their reading skills. The platform features Indonesian folktales that have been adapted and simplified to match learners’ proficiency levels, making traditional stories more accessible for Japanese reading practice.',
       'By turning folktales into beginner-friendly reading materials, Yomunusa helps learners expand their vocabulary, strengthen their understanding of grammar, and build confidence through engaging narratives. The platform also introduces users to the richness of Indonesian culture through a digital learning experience.',
@@ -41,6 +44,9 @@ export const translations = {
     switchLanguage: 'Ganti ke bahasa Inggris',
     previousPage: 'Halaman sebelumnya',
     nextPage: 'Halaman berikutnya',
+    glossary: 'Glosarium',
+    glossaryTerm: 'Kanji',
+    glossaryMeaning: 'Arti',
     whatsBody: [
       'Yomunusa adalah proyek tugas akhir yang dikembangkan untuk membantu pembelajar bahasa Jepang tingkat pemula (N5-N4) meningkatkan kemampuan membaca. Platform ini menggunakan cerita rakyat Indonesia yang telah diadaptasi dan disederhanakan agar sesuai dengan tingkat kemampuan pembelajar, sehingga cerita-cerita tradisional menjadi lebih mudah diakses untuk latihan bahasa Jepang.',
       'Dengan mengubah cerita rakyat menjadi materi bacaan yang ramah bagi pemula, Yomunusa memungkinkan pembelajar untuk memperluas kosakata, memperkuat pemahaman tata bahasa, serta membangun kepercayaan diri dalam membaca melalui narasi yang menarik. Selain itu, platform ini juga memperkenalkan pengguna pada kekayaan budaya Indonesia melalui pengalaman belajar digital.',
