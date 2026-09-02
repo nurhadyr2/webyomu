@@ -21,7 +21,7 @@ export default function StoryList() {
           <Link key={s.slug} to={`/story/${s.slug}`} className="group">
             <img
               src={s.cover}
-              alt={s.title.id}
+              alt={s.title[lang]}
               className="aspect-[4/3] w-full rounded bg-pink-100 object-cover transition group-hover:scale-105"
             />
             <JapaneseText as="p" className="mt-2 text-center text-sm font-semibold text-brand">

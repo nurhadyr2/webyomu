@@ -8,8 +8,8 @@ export default function Navbar() {
   const { lang, toggle, t } = useLanguage()
   return (
     <header className="site-header">
-      <nav className="site-nav" aria-label="Main navigation">
-        <Link to="/" className="institution-link" aria-label="Yomunusa home">
+      <nav className="site-nav" aria-label={t.mainNavigation}>
+        <Link to="/" className="institution-link" aria-label={t.homeLabel}>
           <img
             src={undipLogo}
             alt="Universitas Diponegoro, Program Studi D4 Bahasa Asing Terapan, Sekolah Vokasi"
@@ -22,7 +22,7 @@ export default function Navbar() {
           <button
             onClick={toggle}
             className="language-toggle"
-            aria-label="Switch language"
+            aria-label={t.switchLanguage}
           >
             <FontAwesomeIcon icon={faGlobe} /> {lang.toUpperCase()}
           </button>

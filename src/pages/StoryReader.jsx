@@ -8,7 +8,7 @@ import JapaneseText from '../components/JapaneseText'
 
 export default function StoryReader() {
   const { slug } = useParams()
-  const { t } = useLanguage()
+  const { lang, t } = useLanguage()
   const [story, setStory] = useState(null)
   // page -1 = halaman cover (judul + asal daerah)
   const [page, setPage] = useState(-1)
@@ -44,11 +44,11 @@ export default function StoryReader() {
           <div className="mx-auto flex flex-col items-center gap-4 text-center">
             <img
               src={story.cover}
-              alt={story.title.id}
+              alt={story.title[lang]}
               className="max-h-72 rounded bg-pink-100 object-contain"
             />
             <JapaneseText as="h1" className="text-2xl font-bold text-brand">{story.title.jp}</JapaneseText>
-            <p className="text-lg text-gray-600">「{story.title.id}」</p>
+            <p className="text-lg text-gray-600">「{story.title[lang]}」</p>
             <JapaneseText as="p" className="font-semibold text-brand">{story.regionJp}の話[はなし]</JapaneseText>
           </div>
         ) : (
@@ -68,7 +68,7 @@ export default function StoryReader() {
           <button
             onClick={() => setPage(page - 1)}
             className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow"
-            aria-label="Previous page"
+            aria-label={t.previousPage}
           >
             <FontAwesomeIcon icon={faArrowLeft} />
           </button>
@@ -77,7 +77,7 @@ export default function StoryReader() {
           <button
             onClick={() => setPage(page + 1)}
             className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow"
-            aria-label="Next page"
+            aria-label={t.nextPage}
           >
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
