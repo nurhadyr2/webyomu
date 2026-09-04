@@ -1,6 +1,7 @@
 param(
   [string]$InputFile = "teks revisi.docx",
-  [string]$OutputFile = "src/data/stories/imported-texts.json"
+  [string]$OutputFile = "src/data/stories/imported-texts.json",
+  [string]$GlossaryOutputFile = "src/data/glossaries.json"
 )
 
 $ErrorActionPreference = "Stop"
@@ -52,6 +53,26 @@ function Get-DocumentLines([string]$Path) {
     $line = (($parts -join "") -replace "[\s\u00A0]+", " ").Trim()
     if ($line) { $line }
   }
+}
+
+function Get-DocumentXml([string]$Path) {
+  $resolved = (Resolve-Path $Path).Path
+  $zip = [System.IO.Compression.ZipFile]::OpenRead($resolved)
+  try {
+    $entry = $zip.GetEntry("word/document.xml")
+    if (-not $entry) { throw "word/document.xml tidak ditemukan di $Path" }
+    $reader = [System.IO.StreamReader]::new($entry.Open(), [System.Text.Encoding]::UTF8)
+    try { return [xml]$reader.ReadToEnd() } finally { $reader.Dispose() }
+  } finally {
+    $zip.Dispose()
+  }
+}
+
+function Get-NodeText($Node, $Namespaces) {
+  $parts = foreach ($textNode in $Node.SelectNodes(".//w:t | .//w:tab | .//w:br", $Namespaces)) {
+    if ($textNode.LocalName -eq "t") { $textNode.InnerText } else { " " }
+  }
+  return (($parts -join "") -replace "[\s\u00A0]+", " ").Trim()
 }
 
 function Convert-ToRubySource([string]$Text) {
@@ -114,3 +135,51 @@ $json = $result | ConvertTo-Json -Depth 5
 $target = Join-Path (Get-Location) $OutputFile
 [System.IO.File]::WriteAllText($target, "$json`n", [System.Text.UTF8Encoding]::new($false))
 Write-Host "Materi revisi ditulis ke $OutputFile"
+
+$document = Get-DocumentXml $InputFile
+$namespaces = [System.Xml.XmlNamespaceManager]::new($document.NameTable)
+$namespaces.AddNamespace("w", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+$tables = @($document.SelectNodes("//w:body/w:tbl", $namespaces))
+
+if ($tables.Count -ne $storySpecs.Count) {
+  throw "Ditemukan $($tables.Count) tabel glosarium, seharusnya $($storySpecs.Count)."
+}
+
+$glossaries = [ordered]@{}
+for ($tableIndex = 0; $tableIndex -lt $tables.Count; $tableIndex++) {
+  $groups = @()
+  $currentGroup = $null
+  $rows = @($tables[$tableIndex].SelectNodes("./w:tr", $namespaces))
+
+  foreach ($row in $rows | Select-Object -Skip 1) {
+    $cells = @($row.SelectNodes("./w:tc", $namespaces))
+    if ($cells.Count -eq 0) { continue }
+    $term = Get-NodeText $cells[0] $namespaces
+    if (-not $term) { continue }
+
+    if ($term -in @("Verba", "Adjektiva", "Nomina", "Adverbia")) {
+      $currentGroup = [ordered]@{ category = $term; items = @() }
+      $groups += $currentGroup
+      continue
+    }
+
+    if ($cells.Count -lt 2) { continue }
+    $meaning = Get-NodeText $cells[1] $namespaces
+
+    if ($null -eq $currentGroup) {
+      throw "$($storySpecs[$tableIndex].slug): kata '$term' belum memiliki kelas kata."
+    }
+
+    $currentGroup.items += [ordered]@{
+      term = Convert-ToRubySource $term
+      meaning = $meaning
+    }
+  }
+
+  $glossaries[$storySpecs[$tableIndex].slug] = $groups
+}
+
+$glossaryJson = $glossaries | ConvertTo-Json -Depth 8
+$glossaryTarget = Join-Path (Get-Location) $GlossaryOutputFile
+[System.IO.File]::WriteAllText($glossaryTarget, "$glossaryJson`n", [System.Text.UTF8Encoding]::new($false))
+Write-Host "Glosarium per kelas kata ditulis ke $GlossaryOutputFile"

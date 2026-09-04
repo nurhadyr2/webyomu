@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "import:stories": "node tools/import-stories.mjs",
+    "import:revision": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/import-revision.ps1",
     "lint": "oxlint",
     "preview": "vite preview"
   },

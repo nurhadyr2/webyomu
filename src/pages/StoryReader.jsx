@@ -64,10 +64,17 @@ export default function StoryReader() {
                 <span role="columnheader">{t.glossaryTerm}</span>
                 <span role="columnheader">{t.glossaryMeaning}</span>
               </div>
-              {story.glossary.map((item, index) => (
-                <div className="glossary-row" role="row" key={`${item.term}-${index}`}>
-                  <JapaneseText as="span" role="cell">{item.term}</JapaneseText>
-                  <span role="cell">{item.meaning}</span>
+              {story.glossary.map((group) => (
+                <div className="glossary-group" role="rowgroup" key={group.category}>
+                  <div className="glossary-category" role="row">
+                    <span role="cell">{group.category}</span>
+                  </div>
+                  {group.items.map((item, index) => (
+                    <div className="glossary-row" role="row" key={`${item.term}-${index}`}>
+                      <JapaneseText as="span" role="cell">{item.term}</JapaneseText>
+                      <span role="cell">{item.meaning}</span>
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>

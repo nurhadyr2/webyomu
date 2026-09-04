@@ -1,886 +1,1156 @@
 {
-  "legenda-surabaya": [
-    {
-      "term": "けんか",
-      "meaning": "bertengkar"
-    },
-    {
-      "term": "わける",
-      "meaning": "membagi"
-    },
-    {
-      "term": "だいじにする",
-      "meaning": "menjaga, menghargai"
-    },
-    {
-      "term": "なくなる",
-      "meaning": "habis, hilang"
-    },
-    {
-      "term": "おかしい",
-      "meaning": "aneh"
-    },
-    {
-      "term": "しっぽ",
-      "meaning": "ekor"
-    },
-    {
-      "term": "きずつける",
-      "meaning": "melukai"
-    },
-    {
-      "term": "人（にん）形（ぎょう）",
-      "meaning": "patung, boneka"
-    },
-    {
-      "term": "まんなか",
-      "meaning": "tengah-tengah"
-    }
-  ],
-  "kebo-iwa": [
-    {
-      "term": "おいのり",
-      "meaning": "doa"
-    },
-    {
-      "term": "うれしい",
-      "meaning": "senang"
-    },
-    {
-      "term": "あな",
-      "meaning": "lubang"
-    },
-    {
-      "term": "いし",
-      "meaning": "batu"
-    },
-    {
-      "term": "土（つち）",
-      "meaning": "tanah"
-    },
-    {
-      "term": "よろこんで",
-      "meaning": "dengan gembira"
-    },
-    {
-      "term": "みずうみ",
-      "meaning": "danau"
-    },
-    {
-      "term": "ほって",
-      "meaning": "menggali"
-    }
-  ],
-  "raja-ampat": [
-    {
-      "term": "王（おう）様（さま）",
-      "meaning": "raja"
-    },
-    {
-      "term": "リーダー",
-      "meaning": "pemimpin"
-    },
-    {
-      "term": "森（もり）",
-      "meaning": "hutan"
-    },
-    {
-      "term": "石（いし）",
-      "meaning": "batu"
-    },
-    {
-      "term": "見（み）つける",
-      "meaning": "menemukan"
-    },
-    {
-      "term": "びっくりする",
-      "meaning": "terkejut"
-    },
-    {
-      "term": "あいする",
-      "meaning": "mencintai"
-    },
-    {
-      "term": "ばしょ",
-      "meaning": "tempat"
-    },
-    {
-      "term": "つたえる",
-      "meaning": "menyampaikan, mewariskan"
-    },
-    {
-      "term": "まもる",
-      "meaning": "menjaga"
-    },
-    {
-      "term": "まご",
-      "meaning": "cucu"
-    },
-    {
-      "term": "うれしい",
-      "meaning": "senang, gembira"
-    },
-    {
-      "term": "大（たい）切（せつ）",
-      "meaning": "penting"
-    }
-  ],
-  "danau-toba": [
-    {
-      "term": "湖（こ）",
-      "meaning": "danau"
-    },
-    {
-      "term": "物（もの）語（がたり）",
-      "meaning": "cerita"
-    },
-    {
-      "term": "つる",
-      "meaning": "memancing"
-    },
-    {
-      "term": "かわいそう",
-      "meaning": "kasihan"
-    },
-    {
-      "term": "おまえ",
-      "meaning": "kamu (kasar)"
-    },
-    {
-      "term": "かじ",
-      "meaning": "kebakaran"
-    },
-    {
-      "term": "おこる",
-      "meaning": "marah"
-    },
-    {
-      "term": "なく",
-      "meaning": "menangis"
-    }
-  ],
-  "rawa-pening": [
-    {
-      "term": "湖（みずうみ）",
-      "meaning": "danau"
-    },
-    {
-      "term": "物（もの）語（がたり）",
-      "meaning": "cerita"
-    },
-    {
-      "term": "リーダー",
-      "meaning": "pemimpin"
-    },
-    {
-      "term": "大（たい）切（せつ）",
-      "meaning": "penting"
-    },
-    {
-      "term": "はずかしい",
-      "meaning": "malu"
-    },
-    {
-      "term": "こころ",
-      "meaning": "hati"
-    },
-    {
-      "term": "りゅう",
-      "meaning": "naga"
-    },
-    {
-      "term": "かたち",
-      "meaning": "bentuk"
-    },
-    {
-      "term": "きたない",
-      "meaning": "kotor"
-    },
-    {
-      "term": "どんどん",
-      "meaning": "semakin"
-    },
-    {
-      "term": "たすかる",
-      "meaning": "selamat"
-    },
-    {
-      "term": "ぼう",
-      "meaning": "tongkat"
-    },
-    {
-      "term": "パネン",
-      "meaning": "panen (bahasa Jawa)"
-    },
-    {
-      "term": "プサカ",
-      "meaning": "pusaka (istilah budaya Jawa)"
-    }
-  ],
-  "roro-jonggrang": [
-    {
-      "term": "たたかい",
-      "meaning": "pertarungan"
-    },
-    {
-      "term": "たおす",
-      "meaning": "mengalahkan"
-    },
-    {
-      "term": "力（ちから）",
-      "meaning": "kekuatan"
-    },
-    {
-      "term": "いど",
-      "meaning": "sumur"
-    },
-    {
-      "term": "おこす",
-      "meaning": "membangunkan (orang lain)"
-    },
-    {
-      "term": "うそ",
-      "meaning": "bohong"
-    }
-  ],
-  "tangkuban-perahu": [
-    {
-      "term": "たおす",
-      "meaning": "mengalahkan, merobohkan"
-    },
-    {
-      "term": "いちぶ",
-      "meaning": "sebagian"
-    },
-    {
-      "term": "きず",
-      "meaning": "luka"
-    },
-    {
-      "term": "うそ",
-      "meaning": "bohong"
-    },
-    {
-      "term": "ひっくりかえる",
-      "meaning": "terbalik, terguling"
-    },
-    {
-      "term": "ける",
-      "meaning": "menendang"
-    }
-  ],
-  "banyuwangi": [
-    {
-      "term": "つれて行く",
-      "meaning": "membawa pergi"
-    },
-    {
-      "term": "さす",
-      "meaning": "menusuk"
-    },
-    {
-      "term": "ただしい",
-      "meaning": "benar"
-    },
-    {
-      "term": "すべて",
-      "meaning": "semua"
-    },
-    {
-      "term": "おうさま",
-      "meaning": "raja"
-    },
-    {
-      "term": "かたな",
-      "meaning": "pedang"
-    },
-    {
-      "term": "におい",
-      "meaning": "bau, aroma"
-    }
-  ],
-  "manik-angkeran": [
-    {
-      "term": "ギャンブル",
-      "meaning": "judi"
-    },
-    {
-      "term": "ぬすむ",
-      "meaning": "mencuri"
-    },
-    {
-      "term": "むく",
-      "meaning": "menghadap, menoleh"
-    },
-    {
-      "term": "もやす",
-      "meaning": "membakar"
-    },
-    {
-      "term": "はい",
-      "meaning": "abu"
-    },
-    {
-      "term": "つなぐ",
-      "meaning": "menyambung"
-    },
-    {
-      "term": "生（い）き返（かえ）る",
-      "meaning": "hidup kembali"
-    },
-    {
-      "term": "せん",
-      "meaning": "garis"
-    },
-    {
-      "term": "海（かい）峡（きょう）",
-      "meaning": "selat"
-    },
-    {
-      "term": "すず",
-      "meaning": "lonceng, genta"
-    },
-    {
-      "term": "とう",
-      "meaning": "pulau (dalam ジャワとう/バリとう)"
-    },
-    {
-      "term": "りゅう",
-      "meaning": "naga (sudah pernah muncul di teks Rawa Pening)"
-    },
-    {
-      "term": "力（ちから）",
-      "meaning": "kekuatan"
-    }
-  ],
-  "semarang": [
-    {
-      "term": "先（せん）生（せい）",
-      "meaning": "guru"
-    },
-    {
-      "term": "イスラム",
-      "meaning": "Islam (Agama)"
-    },
-    {
-      "term": "弟（で）子（し）",
-      "meaning": "murid/pengikut"
-    },
-    {
-      "term": "ふしぎ",
-      "meaning": "ajaib"
-    },
-    {
-      "term": "おうじ",
-      "meaning": "pangeran"
-    },
-    {
-      "term": "リーダー",
-      "meaning": "pemimpin"
-    },
-    {
-      "term": "みなと",
-      "meaning": "pelabuhan"
-    },
-    {
-      "term": "れきし",
-      "meaning": "sejarah"
-    },
-    {
-      "term": "土（つち）",
-      "meaning": "tanah"
-    }
-  ],
-  "malin-kundang": [
-    {
-      "term": "物(もの)語(がたり)",
-      "meaning": "kisah/cerita"
-    },
-    {
-      "term": "親(おや)不(ふ)孝(こう)",
-      "meaning": "durhaka pada orang tua"
-    },
-    {
-      "term": "商(しょう)人(にん)",
-      "meaning": "pedagang"
-    },
-    {
-      "term": "こきょう",
-      "meaning": "kampung halaman"
-    },
-    {
-      "term": "抱(だ)きしめる",
-      "meaning": "memeluk erat"
-    },
-    {
-      "term": "部(ぶ)下(か)",
-      "meaning": "bawahan/anak buah"
-    },
-    {
-      "term": "神(かみ)様(さま)",
-      "meaning": "Tuhan/dewa"
-    }
-  ],
-  "timun-mas": [
-    {
-      "term": "物(もの)語(がたり)",
-      "meaning": "kisah/cerita"
-    },
-    {
-      "term": "黄(おう)金(ごん)",
-      "meaning": "emas"
-    },
-    {
-      "term": "巨(きょ)人(じん)",
-      "meaning": "raksasa"
-    },
-    {
-      "term": "きゅうり",
-      "meaning": "mentimun"
-    },
-    {
-      "term": "種(たね)",
-      "meaning": "biji/benih"
-    },
-    {
-      "term": "名(な)付(づ)ける",
-      "meaning": "memberi nama"
-    },
-    {
-      "term": "近(ちか)づく",
-      "meaning": "mendekat"
-    },
-    {
-      "term": "唐(とう)辛(がら)子(し)",
-      "meaning": "cabai"
-    },
-    {
-      "term": "エビペースト",
-      "meaning": "pasta udang"
-    },
-    {
-      "term": "おこる",
-      "meaning": "marah"
-    },
-    {
-      "term": "追(お)いかける",
-      "meaning": "mengejar"
-    },
-    {
-      "term": "つかまる",
-      "meaning": "tertangkap"
-    },
-    {
-      "term": "鋭(するど)い",
-      "meaning": "tajam"
-    },
-    {
-      "term": "竹(たけ)",
-      "meaning": "bambu"
-    },
-    {
-      "term": "林(はやし)",
-      "meaning": "hutan/rimbunan pohon"
-    },
-    {
-      "term": "巻(ま)く",
-      "meaning": "membelit/mengelilingi"
-    },
-    {
-      "term": "畑(はたけ)",
-      "meaning": "ladang"
-    },
-    {
-      "term": "ふっとう",
-      "meaning": "mendidih"
-    },
-    {
-      "term": "どろ",
-      "meaning": "lumpur"
-    },
-    {
-      "term": "しずむ",
-      "meaning": "tenggelam"
-    }
-  ],
-  "ande-ande-lumut": [
-    {
-      "term": "王国(おうこく)",
-      "meaning": "kerajaan"
-    },
-    {
-      "term": "王子(おうじ)",
-      "meaning": "pangeran"
-    },
-    {
-      "term": "王女(おうじょ)",
-      "meaning": "putri (kerajaan)"
-    },
-    {
-      "term": "てき",
-      "meaning": "musuh"
-    },
-    {
-      "term": "こうげき",
-      "meaning": "serangan"
-    },
-    {
-      "term": "かくす",
-      "meaning": "menyembunyikan"
-    },
-    {
-      "term": "義理(ぎり)の姉(あね)",
-      "meaning": "kakak tiri"
-    },
-    {
-      "term": "すがた",
-      "meaning": "wujud/rupa"
-    },
-    {
-      "term": "じょうけん",
-      "meaning": "syarat"
-    },
-    {
-      "term": "ツル",
-      "meaning": "burung bangau"
-    },
-    {
-      "term": "ムチ",
-      "meaning": "cambuk"
-    },
-    {
-      "term": "カニ",
-      "meaning": "kepiting"
-    },
-    {
-      "term": "キス",
-      "meaning": "ciuman"
-    }
-  ],
-  "bawang-merah-bawang-putih": [
-    {
-      "term": "物(もの)語(がたり)",
-      "meaning": "kisah/cerita"
-    },
-    {
-      "term": "未(み)亡(ぼう)人(じん)",
-      "meaning": "janda"
-    },
-    {
-      "term": "こうまん",
-      "meaning": "sombong"
-    },
-    {
-      "term": "よくばり",
-      "meaning": "serakah"
-    },
-    {
-      "term": "どうくつ",
-      "meaning": "gua"
-    },
-    {
-      "term": "カボチャ",
-      "meaning": "labu"
-    },
-    {
-      "term": "ヘビ",
-      "meaning": "ular"
-    },
-    {
-      "term": "おこる",
-      "meaning": "marah"
-    },
-    {
-      "term": "ゆるす",
-      "meaning": "memaafkan"
-    },
-    {
-      "term": "宝(ほう)石(せき)",
-      "meaning": "permata"
-    },
-    {
-      "term": "じょうけん",
-      "meaning": "syarat"
-    },
-    {
-      "term": "そう",
-      "meaning": "mengikuti (arah/sepanjang sesuatu)"
-    },
-    {
-      "term": "ようす",
-      "meaning": "keadaan/situasi"
-    }
-  ],
-  "batu-badaong": [
-    {
-      "term": "物(もの)語(がたり)",
-      "meaning": "kisah/cerita"
-    },
-    {
-      "term": "がまんづよい",
-      "meaning": "sabar/tahan banting"
-    },
-    {
-      "term": "ひざをつく",
-      "meaning": "berlutut"
-    },
-    {
-      "term": "リーダー",
-      "meaning": "pemimpin"
-    },
-    {
-      "term": "とくべつな",
-      "meaning": "khusus/istimewa"
-    },
-    {
-      "term": "態(たい)度(ど)",
-      "meaning": "sikap"
-    },
-    {
-      "term": "大(おお)汗(あせ)",
-      "meaning": "keringat deras/banyak"
-    },
-    {
-      "term": "後(こう)悔(かい)",
-      "meaning": "penyesalan"
-    }
-  ],
-  "putri-mambang-limau": [
-    {
-      "term": "物(もの)語(がたり)",
-      "meaning": "kisah/cerita"
-    },
-    {
-      "term": "こうげき",
-      "meaning": "serangan"
-    },
-    {
-      "term": "形(かた)見(み)",
-      "meaning": "benda peninggalan"
-    },
-    {
-      "term": "つえ",
-      "meaning": "tongkat"
-    },
-    {
-      "term": "たたく",
-      "meaning": "memukul"
-    },
-    {
-      "term": "ころす",
-      "meaning": "membunuh"
-    },
-    {
-      "term": "かくれる",
-      "meaning": "bersembunyi"
-    },
-    {
-      "term": "ショール",
-      "meaning": "selendang"
-    },
-    {
-      "term": "ぬすむ",
-      "meaning": "mencuri"
-    },
-    {
-      "term": "おうさま",
-      "meaning": "raja"
-    },
-    {
-      "term": "王(おう)女(じょ)",
-      "meaning": "putri (kerajaan)"
-    },
-    {
-      "term": "めいれい",
-      "meaning": "perintah"
-    },
-    {
-      "term": "森(もり)",
-      "meaning": "hutan"
-    },
-    {
-      "term": "えだ",
-      "meaning": "dahan/ranting"
-    },
-    {
-      "term": "仕(し)方(かた)なく",
-      "meaning": "terpaksa/tidak ada pilihan lain"
-    },
-    {
-      "term": "タリ・プルスンバハン",
-      "meaning": "nama tarian perayaan/persembahan (dari daerah cerita ini)"
-    },
-    {
-      "term": "あい",
-      "meaning": "cinta"
-    }
-  ],
-  "lutung-kasarung": [
-    {
-      "term": "物(もの)語(がたり)",
-      "meaning": "kisah/cerita"
-    },
-    {
-      "term": "おうさま",
-      "meaning": "raja"
-    },
-    {
-      "term": "しっとぶかい",
-      "meaning": "pencemburu/pendengki"
-    },
-    {
-      "term": "にくしみ",
-      "meaning": "kebencian"
-    },
-    {
-      "term": "まじょ",
-      "meaning": "penyihir"
-    },
-    {
-      "term": "おそろしい",
-      "meaning": "mengerikan"
-    },
-    {
-      "term": "はんてん",
-      "meaning": "bintik/noda"
-    },
-    {
-      "term": "せいこう",
-      "meaning": "keberhasilan/sukses"
-    },
-    {
-      "term": "うそ",
-      "meaning": "bohong"
-    },
-    {
-      "term": "女(じょ)性(せい)",
-      "meaning": "perempuan/wanita"
-    },
-    {
-      "term": "元(もと)",
-      "meaning": "asal/semula"
-    },
-    {
-      "term": "出(で)来(き)事(ごと)",
-      "meaning": "kejadian"
-    },
-    {
-      "term": "仕(し)方(かた)なく",
-      "meaning": "terpaksa/tidak ada pilihan lain"
-    },
-    {
-      "term": "王(おう)国(こく)",
-      "meaning": "kerajaan"
-    }
-  ],
-  "putri-junjung-buih": [
-    {
-      "term": "王(おう)国(こく)",
-      "meaning": "kerajaan"
-    },
-    {
-      "term": "おうさま",
-      "meaning": "raja"
-    },
-    {
-      "term": "王(おう)女(じょ)",
-      "meaning": "putri (kerajaan)"
-    },
-    {
-      "term": "王(おう)子(じ)",
-      "meaning": "pangeran"
-    },
-    {
-      "term": "あわ",
-      "meaning": "gelembung/buih"
-    },
-    {
-      "term": "うく",
-      "meaning": "mengapung"
-    },
-    {
-      "term": "あいする",
-      "meaning": "mencintai"
-    },
-    {
-      "term": "まほう",
-      "meaning": "sihir"
-    },
-    {
-      "term": "若(わか)者(もの)",
-      "meaning": "pemuda"
-    },
-    {
-      "term": "旅(たび)",
-      "meaning": "perjalanan"
-    },
-    {
-      "term": "出(で)来(き)事(ごと)",
-      "meaning": "kejadian"
-    },
-    {
-      "term": "特(とく)別(べつ)",
-      "meaning": "khusus/istimewa"
-    },
-    {
-      "term": "条(じょう)件(けん)",
-      "meaning": "syarat"
-    }
-  ],
-  "ratu-ular": [
-    {
-      "term": "物(もの)語(がたり)",
-      "meaning": "kisah/cerita"
-    },
-    {
-      "term": "王(おう)国(こく)",
-      "meaning": "kerajaan"
-    },
-    {
-      "term": "おうさま",
-      "meaning": "raja"
-    },
-    {
-      "term": "王(おう)女(じょ)",
-      "meaning": "putri (kerajaan)"
-    },
-    {
-      "term": "かみなり",
-      "meaning": "petir"
-    },
-    {
-      "term": "うろこ",
-      "meaning": "sisik"
-    },
-    {
-      "term": "ヘビ",
-      "meaning": "ular"
-    },
-    {
-      "term": "おうひ",
-      "meaning": "permaisuri"
-    }
-  ],
-  "batu-menangis": [
-    {
-      "term": "伝(でん)説(せつ)",
-      "meaning": "legenda"
-    },
-    {
-      "term": "じまん",
-      "meaning": "sombong/suka pamer"
-    },
-    {
-      "term": "めしつかい",
-      "meaning": "pelayan"
-    },
-    {
-      "term": "喜(よろこ)ぶ",
-      "meaning": "senang/gembira"
-    },
-    {
-      "term": "ぜんしん",
-      "meaning": "seluruh tubuh"
-    }
-  ]
+    "legenda-surabaya":  [
+                             {
+                                 "category":  "Verba",
+                                 "items":  [
+                                               {
+                                                   "term":  "わける",
+                                                   "meaning":  "membagi"
+                                               },
+                                               {
+                                                   "term":  "だいじにする",
+                                                   "meaning":  "menjaga, menghargai"
+                                               },
+                                               {
+                                                   "term":  "なくなる",
+                                                   "meaning":  "habis, hilang"
+                                               },
+                                               {
+                                                   "term":  "きずつける",
+                                                   "meaning":  "melukai"
+                                               }
+                                           ]
+                             },
+                             {
+                                 "category":  "Adjektiva",
+                                 "items":  [
+                                               {
+                                                   "term":  "おかしい",
+                                                   "meaning":  "aneh"
+                                               }
+                                           ]
+                             },
+                             {
+                                 "category":  "Nomina",
+                                 "items":  [
+                                               {
+                                                   "term":  "けんか",
+                                                   "meaning":  "pertengkaran"
+                                               },
+                                               {
+                                                   "term":  "しっぽ",
+                                                   "meaning":  "ekor"
+                                               },
+                                               {
+                                                   "term":  "人[にん]形[ぎょう]",
+                                                   "meaning":  "patung, boneka"
+                                               },
+                                               {
+                                                   "term":  "まんなか",
+                                                   "meaning":  "tengah-tengah"
+                                               }
+                                           ]
+                             }
+                         ],
+    "kebo-iwa":  [
+                     {
+                         "category":  "Verba",
+                         "items":  [
+                                       {
+                                           "term":  "よろこんで",
+                                           "meaning":  "dengan gembira"
+                                       },
+                                       {
+                                           "term":  "ほって",
+                                           "meaning":  "menggali"
+                                       }
+                                   ]
+                     },
+                     {
+                         "category":  "Adjektiva",
+                         "items":  [
+                                       {
+                                           "term":  "うれしい",
+                                           "meaning":  "senang"
+                                       }
+                                   ]
+                     },
+                     {
+                         "category":  "Nomina",
+                         "items":  [
+                                       {
+                                           "term":  "おいのり",
+                                           "meaning":  "doa"
+                                       },
+                                       {
+                                           "term":  "あな",
+                                           "meaning":  "lubang"
+                                       },
+                                       {
+                                           "term":  "いし",
+                                           "meaning":  "batu"
+                                       },
+                                       {
+                                           "term":  "土[つち]",
+                                           "meaning":  "tanah"
+                                       },
+                                       {
+                                           "term":  "みずうみ",
+                                           "meaning":  "danau"
+                                       }
+                                   ]
+                     }
+                 ],
+    "raja-ampat":  [
+                       {
+                           "category":  "Verba",
+                           "items":  [
+                                         {
+                                             "term":  "見[み]つける",
+                                             "meaning":  "menemukan"
+                                         },
+                                         {
+                                             "term":  "びっくりする",
+                                             "meaning":  "terkejut"
+                                         },
+                                         {
+                                             "term":  "あいする",
+                                             "meaning":  "mencintai"
+                                         },
+                                         {
+                                             "term":  "つたえる",
+                                             "meaning":  "menyampaikan, mewariskan"
+                                         },
+                                         {
+                                             "term":  "まもる",
+                                             "meaning":  "menjaga"
+                                         }
+                                     ]
+                       },
+                       {
+                           "category":  "Adjektiva",
+                           "items":  [
+                                         {
+                                             "term":  "うれしい",
+                                             "meaning":  "senang, gembira"
+                                         },
+                                         {
+                                             "term":  "大[たい]切[せつ]",
+                                             "meaning":  "penting"
+                                         }
+                                     ]
+                       },
+                       {
+                           "category":  "Nomina",
+                           "items":  [
+                                         {
+                                             "term":  "王[おう]様[さま]",
+                                             "meaning":  "raja"
+                                         },
+                                         {
+                                             "term":  "リーダー",
+                                             "meaning":  "pemimpin"
+                                         },
+                                         {
+                                             "term":  "森[もり]",
+                                             "meaning":  "hutan"
+                                         },
+                                         {
+                                             "term":  "石[いし]",
+                                             "meaning":  "batu"
+                                         },
+                                         {
+                                             "term":  "ばしょ",
+                                             "meaning":  "tempat"
+                                         },
+                                         {
+                                             "term":  "まご",
+                                             "meaning":  "cucu"
+                                         }
+                                     ]
+                       }
+                   ],
+    "danau-toba":  [
+                       {
+                           "category":  "Verba",
+                           "items":  [
+                                         {
+                                             "term":  "つる",
+                                             "meaning":  "memancing"
+                                         },
+                                         {
+                                             "term":  "おこる",
+                                             "meaning":  "marah"
+                                         },
+                                         {
+                                             "term":  "なく",
+                                             "meaning":  "menangis"
+                                         }
+                                     ]
+                       },
+                       {
+                           "category":  "Adjektiva",
+                           "items":  [
+                                         {
+                                             "term":  "かわいそう",
+                                             "meaning":  "kasihan"
+                                         }
+                                     ]
+                       },
+                       {
+                           "category":  "Nomina",
+                           "items":  [
+                                         {
+                                             "term":  "湖[こ]",
+                                             "meaning":  "danau"
+                                         },
+                                         {
+                                             "term":  "物[もの]語[がたり]",
+                                             "meaning":  "cerita"
+                                         },
+                                         {
+                                             "term":  "おまえ",
+                                             "meaning":  "kamu (kasar)"
+                                         },
+                                         {
+                                             "term":  "かじ",
+                                             "meaning":  "kebakaran"
+                                         }
+                                     ]
+                       }
+                   ],
+    "rawa-pening":  [
+                        {
+                            "category":  "Verba",
+                            "items":  [
+                                          {
+                                              "term":  "たすかる",
+                                              "meaning":  "selamat"
+                                          }
+                                      ]
+                        },
+                        {
+                            "category":  "Adjektiva",
+                            "items":  [
+                                          {
+                                              "term":  "大[たい]切[せつ]",
+                                              "meaning":  "penting"
+                                          },
+                                          {
+                                              "term":  "はずかしい",
+                                              "meaning":  "malu"
+                                          },
+                                          {
+                                              "term":  "きたない",
+                                              "meaning":  "kotor"
+                                          }
+                                      ]
+                        },
+                        {
+                            "category":  "Nomina",
+                            "items":  [
+                                          {
+                                              "term":  "湖[みずうみ]",
+                                              "meaning":  "danau"
+                                          },
+                                          {
+                                              "term":  "物[もの]語[がたり]",
+                                              "meaning":  "cerita"
+                                          },
+                                          {
+                                              "term":  "リーダー",
+                                              "meaning":  "pemimpin"
+                                          },
+                                          {
+                                              "term":  "こころ",
+                                              "meaning":  "hati"
+                                          },
+                                          {
+                                              "term":  "りゅう",
+                                              "meaning":  "naga"
+                                          },
+                                          {
+                                              "term":  "かたち",
+                                              "meaning":  "bentuk"
+                                          },
+                                          {
+                                              "term":  "ぼう",
+                                              "meaning":  "tongkat"
+                                          },
+                                          {
+                                              "term":  "パネン",
+                                              "meaning":  "panen (bahasa Jawa)"
+                                          },
+                                          {
+                                              "term":  "プサカ",
+                                              "meaning":  "pusaka (istilah budaya Jawa)"
+                                          }
+                                      ]
+                        },
+                        {
+                            "category":  "Adverbia",
+                            "items":  [
+                                          {
+                                              "term":  "どんどん",
+                                              "meaning":  "semakin"
+                                          }
+                                      ]
+                        }
+                    ],
+    "roro-jonggrang":  [
+                           {
+                               "category":  "Verba",
+                               "items":  [
+                                             {
+                                                 "term":  "たおす",
+                                                 "meaning":  "mengalahkan"
+                                             },
+                                             {
+                                                 "term":  "おこす",
+                                                 "meaning":  "membangunkan (orang lain)"
+                                             }
+                                         ]
+                           },
+                           {
+                               "category":  "Nomina",
+                               "items":  [
+                                             {
+                                                 "term":  "たたかい",
+                                                 "meaning":  "pertarungan"
+                                             },
+                                             {
+                                                 "term":  "力[ちから]",
+                                                 "meaning":  "kekuatan"
+                                             },
+                                             {
+                                                 "term":  "いど",
+                                                 "meaning":  "sumur"
+                                             },
+                                             {
+                                                 "term":  "うそ",
+                                                 "meaning":  "bohong"
+                                             }
+                                         ]
+                           }
+                       ],
+    "tangkuban-perahu":  [
+                             {
+                                 "category":  "Verba",
+                                 "items":  [
+                                               {
+                                                   "term":  "たおす",
+                                                   "meaning":  "mengalahkan, merobohkan"
+                                               },
+                                               {
+                                                   "term":  "ひっくりかえる",
+                                                   "meaning":  "terbalik, terguling"
+                                               },
+                                               {
+                                                   "term":  "ける",
+                                                   "meaning":  "menendang"
+                                               }
+                                           ]
+                             },
+                             {
+                                 "category":  "Nomina",
+                                 "items":  [
+                                               {
+                                                   "term":  "いちぶ",
+                                                   "meaning":  "sebagian"
+                                               },
+                                               {
+                                                   "term":  "きず",
+                                                   "meaning":  "luka"
+                                               },
+                                               {
+                                                   "term":  "うそ",
+                                                   "meaning":  "bohong"
+                                               }
+                                           ]
+                             }
+                         ],
+    "banyuwangi":  [
+                       {
+                           "category":  "Verba",
+                           "items":  [
+                                         {
+                                             "term":  "つれて行く",
+                                             "meaning":  "membawa pergi"
+                                         },
+                                         {
+                                             "term":  "さす",
+                                             "meaning":  "menusuk"
+                                         }
+                                     ]
+                       },
+                       {
+                           "category":  "Adjektiva",
+                           "items":  [
+                                         {
+                                             "term":  "ただしい",
+                                             "meaning":  "benar"
+                                         }
+                                     ]
+                       },
+                       {
+                           "category":  "Nomina",
+                           "items":  [
+                                         {
+                                             "term":  "すべて",
+                                             "meaning":  "semua"
+                                         },
+                                         {
+                                             "term":  "おうさま",
+                                             "meaning":  "raja"
+                                         },
+                                         {
+                                             "term":  "かたな",
+                                             "meaning":  "pedang"
+                                         },
+                                         {
+                                             "term":  "におい",
+                                             "meaning":  "bau, aroma"
+                                         }
+                                     ]
+                       }
+                   ],
+    "manik-angkeran":  [
+                           {
+                               "category":  "Verba",
+                               "items":  [
+                                             {
+                                                 "term":  "ぬすむ",
+                                                 "meaning":  "mencuri"
+                                             },
+                                             {
+                                                 "term":  "むく",
+                                                 "meaning":  "menghadap, menoleh"
+                                             },
+                                             {
+                                                 "term":  "もやす",
+                                                 "meaning":  "membakar"
+                                             },
+                                             {
+                                                 "term":  "つなぐ",
+                                                 "meaning":  "menyambung"
+                                             },
+                                             {
+                                                 "term":  "生[い]き返[かえ]る",
+                                                 "meaning":  "hidup kembali"
+                                             }
+                                         ]
+                           },
+                           {
+                               "category":  "Nomina",
+                               "items":  [
+                                             {
+                                                 "term":  "ギャンブル",
+                                                 "meaning":  "judi"
+                                             },
+                                             {
+                                                 "term":  "はい",
+                                                 "meaning":  "abu"
+                                             },
+                                             {
+                                                 "term":  "せん",
+                                                 "meaning":  "garis"
+                                             },
+                                             {
+                                                 "term":  "海[かい]峡[きょう]",
+                                                 "meaning":  "selat"
+                                             },
+                                             {
+                                                 "term":  "すず",
+                                                 "meaning":  "lonceng, genta"
+                                             },
+                                             {
+                                                 "term":  "とう",
+                                                 "meaning":  "pulau (dalam ジャワとう/バリとう)"
+                                             },
+                                             {
+                                                 "term":  "りゅう",
+                                                 "meaning":  "naga (sudah pernah muncul di teks Rawa Pening)"
+                                             },
+                                             {
+                                                 "term":  "力[ちから]",
+                                                 "meaning":  "kekuatan"
+                                             }
+                                         ]
+                           }
+                       ],
+    "semarang":  [
+                     {
+                         "category":  "Adjektiva",
+                         "items":  [
+                                       {
+                                           "term":  "ふしぎ",
+                                           "meaning":  "ajaib"
+                                       }
+                                   ]
+                     },
+                     {
+                         "category":  "Nomina",
+                         "items":  [
+                                       {
+                                           "term":  "先[せん]生[せい]",
+                                           "meaning":  "guru"
+                                       },
+                                       {
+                                           "term":  "イスラム",
+                                           "meaning":  "Islam (Agama)"
+                                       },
+                                       {
+                                           "term":  "弟[で]子[し]",
+                                           "meaning":  "murid/pengikut"
+                                       },
+                                       {
+                                           "term":  "おうじ",
+                                           "meaning":  "pangeran"
+                                       },
+                                       {
+                                           "term":  "リーダー",
+                                           "meaning":  "pemimpin"
+                                       },
+                                       {
+                                           "term":  "みなと",
+                                           "meaning":  "pelabuhan"
+                                       },
+                                       {
+                                           "term":  "れきし",
+                                           "meaning":  "sejarah"
+                                       },
+                                       {
+                                           "term":  "土[つち]",
+                                           "meaning":  "tanah"
+                                       }
+                                   ]
+                     }
+                 ],
+    "malin-kundang":  [
+                          {
+                              "category":  "Verba",
+                              "items":  [
+                                            {
+                                                "term":  "抱[だ]きしめる",
+                                                "meaning":  "memeluk erat"
+                                            }
+                                        ]
+                          },
+                          {
+                              "category":  "Adjektiva",
+                              "items":  [
+                                            {
+                                                "term":  "親[おや]不[ふ]孝[こう]",
+                                                "meaning":  "durhaka pada orang tua"
+                                            }
+                                        ]
+                          },
+                          {
+                              "category":  "Nomina",
+                              "items":  [
+                                            {
+                                                "term":  "物[もの]語[がたり]",
+                                                "meaning":  "kisah/cerita"
+                                            },
+                                            {
+                                                "term":  "商[しょう]人[にん]",
+                                                "meaning":  "pedagang"
+                                            },
+                                            {
+                                                "term":  "こきょう",
+                                                "meaning":  "kampung halaman"
+                                            },
+                                            {
+                                                "term":  "部[ぶ]下[か]",
+                                                "meaning":  "bawahan/anak buah"
+                                            },
+                                            {
+                                                "term":  "神[かみ]様[さま]",
+                                                "meaning":  "Tuhan/dewa"
+                                            }
+                                        ]
+                          }
+                      ],
+    "timun-mas":  [
+                      {
+                          "category":  "Verba",
+                          "items":  [
+                                        {
+                                            "term":  "名[な]付[づ]ける",
+                                            "meaning":  "memberi nama"
+                                        },
+                                        {
+                                            "term":  "近[ちか]づく",
+                                            "meaning":  "mendekat"
+                                        },
+                                        {
+                                            "term":  "おこる",
+                                            "meaning":  "marah"
+                                        },
+                                        {
+                                            "term":  "追[お]いかける",
+                                            "meaning":  "mengejar"
+                                        },
+                                        {
+                                            "term":  "つかまる",
+                                            "meaning":  "tertangkap"
+                                        },
+                                        {
+                                            "term":  "巻[ま]く",
+                                            "meaning":  "membelit/mengelilingi"
+                                        },
+                                        {
+                                            "term":  "ふっとう",
+                                            "meaning":  "mendidih"
+                                        },
+                                        {
+                                            "term":  "しずむ",
+                                            "meaning":  "tenggelam"
+                                        }
+                                    ]
+                      },
+                      {
+                          "category":  "Adjektiva",
+                          "items":  [
+                                        {
+                                            "term":  "鋭[するど]い",
+                                            "meaning":  "tajam"
+                                        }
+                                    ]
+                      },
+                      {
+                          "category":  "Nomina",
+                          "items":  [
+                                        {
+                                            "term":  "物[もの]語[がたり]",
+                                            "meaning":  "kisah/cerita"
+                                        },
+                                        {
+                                            "term":  "黄[おう]金[ごん]",
+                                            "meaning":  "emas"
+                                        },
+                                        {
+                                            "term":  "巨[きょ]人[じん]",
+                                            "meaning":  "raksasa"
+                                        },
+                                        {
+                                            "term":  "きゅうり",
+                                            "meaning":  "mentimun"
+                                        },
+                                        {
+                                            "term":  "種[たね]",
+                                            "meaning":  "biji/benih"
+                                        },
+                                        {
+                                            "term":  "唐[とう]辛[がら]子[し]",
+                                            "meaning":  "cabai"
+                                        },
+                                        {
+                                            "term":  "エビペースト",
+                                            "meaning":  "pasta udang (terasi)"
+                                        },
+                                        {
+                                            "term":  "竹[たけ]",
+                                            "meaning":  "bambu"
+                                        },
+                                        {
+                                            "term":  "林[はやし]",
+                                            "meaning":  "hutan/rimbunan pohon"
+                                        },
+                                        {
+                                            "term":  "畑[はたけ]",
+                                            "meaning":  "ladang"
+                                        },
+                                        {
+                                            "term":  "どろ",
+                                            "meaning":  "lumpur"
+                                        }
+                                    ]
+                      }
+                  ],
+    "ande-ande-lumut":  [
+                            {
+                                "category":  "Verba",
+                                "items":  [
+                                              {
+                                                  "term":  "かくす",
+                                                  "meaning":  "menyembunyikan"
+                                              }
+                                          ]
+                            },
+                            {
+                                "category":  "Nomina",
+                                "items":  [
+                                              {
+                                                  "term":  "王国[おうこく]",
+                                                  "meaning":  "kerajaan"
+                                              },
+                                              {
+                                                  "term":  "王子[おうじ]",
+                                                  "meaning":  "pangeran"
+                                              },
+                                              {
+                                                  "term":  "王女[おうじょ]",
+                                                  "meaning":  "putri (kerajaan)"
+                                              },
+                                              {
+                                                  "term":  "てき",
+                                                  "meaning":  "musuh"
+                                              },
+                                              {
+                                                  "term":  "こうげき",
+                                                  "meaning":  "serangan"
+                                              },
+                                              {
+                                                  "term":  "義理[ぎり]の姉[あね]",
+                                                  "meaning":  "kakak tiri"
+                                              },
+                                              {
+                                                  "term":  "すがた",
+                                                  "meaning":  "wujud/rupa"
+                                              },
+                                              {
+                                                  "term":  "じょうけん",
+                                                  "meaning":  "syarat"
+                                              },
+                                              {
+                                                  "term":  "ツル",
+                                                  "meaning":  "burung bangau"
+                                              },
+                                              {
+                                                  "term":  "ムチ",
+                                                  "meaning":  "cambuk"
+                                              },
+                                              {
+                                                  "term":  "カニ",
+                                                  "meaning":  "kepiting"
+                                              },
+                                              {
+                                                  "term":  "キス",
+                                                  "meaning":  "ciuman"
+                                              }
+                                          ]
+                            }
+                        ],
+    "bawang-merah-bawang-putih":  [
+                                      {
+                                          "category":  "Verba",
+                                          "items":  [
+                                                        {
+                                                            "term":  "おこる",
+                                                            "meaning":  "marah"
+                                                        },
+                                                        {
+                                                            "term":  "ゆるす",
+                                                            "meaning":  "memaafkan"
+                                                        },
+                                                        {
+                                                            "term":  "そう",
+                                                            "meaning":  "mengikuti (arah/sepanjang sesuatu)"
+                                                        }
+                                                    ]
+                                      },
+                                      {
+                                          "category":  "Adjektiva",
+                                          "items":  [
+                                                        {
+                                                            "term":  "こうまん",
+                                                            "meaning":  "sombong"
+                                                        },
+                                                        {
+                                                            "term":  "よくばり",
+                                                            "meaning":  "serakah"
+                                                        }
+                                                    ]
+                                      },
+                                      {
+                                          "category":  "Nomina",
+                                          "items":  [
+                                                        {
+                                                            "term":  "物[もの]語[がたり]",
+                                                            "meaning":  "kisah/cerita"
+                                                        },
+                                                        {
+                                                            "term":  "未[み]亡[ぼう]人[じん]",
+                                                            "meaning":  "janda"
+                                                        },
+                                                        {
+                                                            "term":  "どうくつ",
+                                                            "meaning":  "gua"
+                                                        },
+                                                        {
+                                                            "term":  "カボチャ",
+                                                            "meaning":  "labu"
+                                                        },
+                                                        {
+                                                            "term":  "ヘビ",
+                                                            "meaning":  "ular"
+                                                        },
+                                                        {
+                                                            "term":  "宝[ほう]石[せき]",
+                                                            "meaning":  "permata"
+                                                        },
+                                                        {
+                                                            "term":  "じょうけん",
+                                                            "meaning":  "syarat"
+                                                        },
+                                                        {
+                                                            "term":  "ようす",
+                                                            "meaning":  "keadaan/situasi"
+                                                        }
+                                                    ]
+                                      }
+                                  ],
+    "batu-badaong":  [
+                         {
+                             "category":  "Verba",
+                             "items":  [
+                                           {
+                                               "term":  "ひざをつく",
+                                               "meaning":  "berlutut"
+                                           }
+                                       ]
+                         },
+                         {
+                             "category":  "Adjektiva",
+                             "items":  [
+                                           {
+                                               "term":  "がまんづよい",
+                                               "meaning":  "sabar/tahan banting"
+                                           },
+                                           {
+                                               "term":  "とくべつな",
+                                               "meaning":  "khusus/istimewa"
+                                           }
+                                       ]
+                         },
+                         {
+                             "category":  "Nomina",
+                             "items":  [
+                                           {
+                                               "term":  "物[もの]語[がたり]",
+                                               "meaning":  "kisah/cerita"
+                                           },
+                                           {
+                                               "term":  "リーダー",
+                                               "meaning":  "pemimpin"
+                                           },
+                                           {
+                                               "term":  "態[たい]度[ど]",
+                                               "meaning":  "sikap"
+                                           },
+                                           {
+                                               "term":  "大[おお]汗[あせ]",
+                                               "meaning":  "keringat deras/banyak"
+                                           },
+                                           {
+                                               "term":  "後[こう]悔[かい]",
+                                               "meaning":  "penyesalan"
+                                           }
+                                       ]
+                         }
+                     ],
+    "putri-mambang-limau":  [
+                                {
+                                    "category":  "Verba",
+                                    "items":  [
+                                                  {
+                                                      "term":  "たたく",
+                                                      "meaning":  "memukul"
+                                                  },
+                                                  {
+                                                      "term":  "ころす",
+                                                      "meaning":  "membunuh"
+                                                  },
+                                                  {
+                                                      "term":  "かくれる",
+                                                      "meaning":  "bersembunyi"
+                                                  },
+                                                  {
+                                                      "term":  "ぬすむ",
+                                                      "meaning":  "mencuri"
+                                                  }
+                                              ]
+                                },
+                                {
+                                    "category":  "Nomina",
+                                    "items":  [
+                                                  {
+                                                      "term":  "こうげき",
+                                                      "meaning":  "serangan"
+                                                  },
+                                                  {
+                                                      "term":  "形[かた]見[み]",
+                                                      "meaning":  "benda peninggalan"
+                                                  },
+                                                  {
+                                                      "term":  "つえ",
+                                                      "meaning":  "tongkat"
+                                                  },
+                                                  {
+                                                      "term":  "ショール",
+                                                      "meaning":  "selendang"
+                                                  },
+                                                  {
+                                                      "term":  "おうさま",
+                                                      "meaning":  "raja"
+                                                  },
+                                                  {
+                                                      "term":  "王[おう]女[じょ]",
+                                                      "meaning":  "putri (kerajaan)"
+                                                  },
+                                                  {
+                                                      "term":  "めいれい",
+                                                      "meaning":  "perintah"
+                                                  },
+                                                  {
+                                                      "term":  "森[もり]",
+                                                      "meaning":  "hutan"
+                                                  },
+                                                  {
+                                                      "term":  "えだ",
+                                                      "meaning":  "dahan/ranting"
+                                                  },
+                                                  {
+                                                      "term":  "タリ・プルスンバハン",
+                                                      "meaning":  "nama tarian perayaan/persembahan (dari daerah cerita ini)"
+                                                  },
+                                                  {
+                                                      "term":  "あい",
+                                                      "meaning":  "cinta"
+                                                  },
+                                                  {
+                                                      "term":  "物[もの]語[がたり]",
+                                                      "meaning":  "kisah/cerita"
+                                                  }
+                                              ]
+                                },
+                                {
+                                    "category":  "Adverbia",
+                                    "items":  [
+                                                  {
+                                                      "term":  "仕[し]方[かた]なく",
+                                                      "meaning":  "terpaksa/tidak ada pilihan lain"
+                                                  }
+                                              ]
+                                }
+                            ],
+    "lutung-kasarung":  [
+                            {
+                                "category":  "Adjektiva",
+                                "items":  [
+                                              {
+                                                  "term":  "しっとぶかい",
+                                                  "meaning":  "pencemburu/pendengki"
+                                              },
+                                              {
+                                                  "term":  "おそろしい",
+                                                  "meaning":  "mengerikan"
+                                              }
+                                          ]
+                            },
+                            {
+                                "category":  "Nomina",
+                                "items":  [
+                                              {
+                                                  "term":  "物[もの]語[がたり]",
+                                                  "meaning":  "kisah/cerita"
+                                              },
+                                              {
+                                                  "term":  "おうさま",
+                                                  "meaning":  "raja"
+                                              },
+                                              {
+                                                  "term":  "にくしみ",
+                                                  "meaning":  "kebencian"
+                                              },
+                                              {
+                                                  "term":  "まじょ",
+                                                  "meaning":  "penyihir"
+                                              },
+                                              {
+                                                  "term":  "はんてん",
+                                                  "meaning":  "bintik/noda"
+                                              },
+                                              {
+                                                  "term":  "せいこう",
+                                                  "meaning":  "keberhasilan/sukses"
+                                              },
+                                              {
+                                                  "term":  "うそ",
+                                                  "meaning":  "bohong"
+                                              },
+                                              {
+                                                  "term":  "女[じょ]性[せい]",
+                                                  "meaning":  "perempuan/wanita"
+                                              },
+                                              {
+                                                  "term":  "元[もと]",
+                                                  "meaning":  "asal/semula"
+                                              },
+                                              {
+                                                  "term":  "出[で]来[き]事[ごと]",
+                                                  "meaning":  "kejadian"
+                                              },
+                                              {
+                                                  "term":  "王[おう]国[こく]",
+                                                  "meaning":  "kerajaan"
+                                              }
+                                          ]
+                            },
+                            {
+                                "category":  "Adverbia",
+                                "items":  [
+                                              {
+                                                  "term":  "仕[し]方[かた]なく",
+                                                  "meaning":  "terpaksa/tidak ada pilihan lain"
+                                              }
+                                          ]
+                            }
+                        ],
+    "putri-junjung-buih":  [
+                               {
+                                   "category":  "Verba",
+                                   "items":  [
+                                                 {
+                                                     "term":  "うく",
+                                                     "meaning":  "mengapung"
+                                                 },
+                                                 {
+                                                     "term":  "あいする",
+                                                     "meaning":  "mencintai"
+                                                 }
+                                             ]
+                               },
+                               {
+                                   "category":  "Adjektiva",
+                                   "items":  [
+                                                 {
+                                                     "term":  "特[とく]別[べつ]",
+                                                     "meaning":  "khusus/istimewa"
+                                                 }
+                                             ]
+                               },
+                               {
+                                   "category":  "Nomina",
+                                   "items":  [
+                                                 {
+                                                     "term":  "王[おう]国[こく]",
+                                                     "meaning":  "kerajaan"
+                                                 },
+                                                 {
+                                                     "term":  "おうさま",
+                                                     "meaning":  "raja"
+                                                 },
+                                                 {
+                                                     "term":  "王[おう]女[じょ]",
+                                                     "meaning":  "putri (kerajaan)"
+                                                 },
+                                                 {
+                                                     "term":  "王[おう]子[じ]",
+                                                     "meaning":  "pangeran"
+                                                 },
+                                                 {
+                                                     "term":  "あわ",
+                                                     "meaning":  "gelembung/buih"
+                                                 },
+                                                 {
+                                                     "term":  "まほう",
+                                                     "meaning":  "sihir"
+                                                 },
+                                                 {
+                                                     "term":  "若[わか]者[もの]",
+                                                     "meaning":  "pemuda"
+                                                 },
+                                                 {
+                                                     "term":  "旅[たび]",
+                                                     "meaning":  "perjalanan"
+                                                 },
+                                                 {
+                                                     "term":  "出[で]来[き]事[ごと]",
+                                                     "meaning":  "kejadian"
+                                                 },
+                                                 {
+                                                     "term":  "条[じょう]件[けん]",
+                                                     "meaning":  "syarat"
+                                                 }
+                                             ]
+                               }
+                           ],
+    "ratu-ular":  [
+                      {
+                          "category":  "Nomina",
+                          "items":  [
+                                        {
+                                            "term":  "物[もの]語[がたり]",
+                                            "meaning":  "kisah/cerita"
+                                        },
+                                        {
+                                            "term":  "王[おう]国[こく]",
+                                            "meaning":  "kerajaan"
+                                        },
+                                        {
+                                            "term":  "おうさま",
+                                            "meaning":  "raja"
+                                        },
+                                        {
+                                            "term":  "王[おう]女[じょ]",
+                                            "meaning":  "putri (kerajaan)"
+                                        },
+                                        {
+                                            "term":  "かみなり",
+                                            "meaning":  "petir"
+                                        },
+                                        {
+                                            "term":  "うろこ",
+                                            "meaning":  "sisik"
+                                        },
+                                        {
+                                            "term":  "ヘビ",
+                                            "meaning":  "ular"
+                                        },
+                                        {
+                                            "term":  "おうひ",
+                                            "meaning":  "permaisuri"
+                                        }
+                                    ]
+                      }
+                  ],
+    "batu-menangis":  [
+                          {
+                              "category":  "Verba",
+                              "items":  [
+                                            {
+                                                "term":  "喜[よろこ]ぶ",
+                                                "meaning":  "senang/gembira"
+                                            }
+                                        ]
+                          },
+                          {
+                              "category":  "Adjektiva",
+                              "items":  [
+                                            {
+                                                "term":  "じまん",
+                                                "meaning":  "sombong/suka pamer"
+                                            }
+                                        ]
+                          },
+                          {
+                              "category":  "Nomina",
+                              "items":  [
+                                            {
+                                                "term":  "伝[でん]説[せつ]",
+                                                "meaning":  "legenda"
+                                            },
+                                            {
+                                                "term":  "めしつかい",
+                                                "meaning":  "pelayan"
+                                            },
+                                            {
+                                                "term":  "ぜんしん",
+                                                "meaning":  "seluruh tubuh"
+                                            }
+                                        ]
+                          }
+                      ]
 }
