@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
@@ -12,6 +12,7 @@ export default function StoryReader() {
   const [story, setStory] = useState(null)
   // page -1 = halaman cover (judul + asal daerah)
   const [page, setPage] = useState(-1)
+  const touchStart = useRef(null)
 
   useEffect(() => {
     setStory(null)
@@ -29,6 +30,24 @@ export default function StoryReader() {
   const current = isCover || isGlossary ? null : story.pages[page]
   const hasNext = page < story.pages.length - 1 || (hasGlossary && page < story.pages.length)
   const hasPrev = page > -1
+  const totalSteps = story.pages.length + 1 + (hasGlossary ? 1 : 0)
+
+  const goPrev = () => hasPrev && setPage((p) => p - 1)
+  const goNext = () => hasNext && setPage((p) => p + 1)
+
+  const handleTouchStart = (event) => {
+    touchStart.current = { x: event.touches[0].clientX, y: event.touches[0].clientY }
+  }
+
+  const handleTouchEnd = (event) => {
+    if (!touchStart.current) return
+    const deltaX = event.changedTouches[0].clientX - touchStart.current.x
+    const deltaY = event.changedTouches[0].clientY - touchStart.current.y
+    touchStart.current = null
+    if (Math.abs(deltaX) < 50 || Math.abs(deltaX) < Math.abs(deltaY)) return
+    if (deltaX < 0) goNext()
+    else goPrev()
+  }
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10">
@@ -41,7 +60,11 @@ export default function StoryReader() {
         </Link>
       </div>
 
-      <div className="relative flex min-h-[60vh] items-center gap-6 rounded-lg bg-gray-100 p-8">
+      <div
+        className="relative flex min-h-[60vh] touch-pan-y items-center gap-6 rounded-lg bg-gray-100 p-8"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         {isCover ? (
           <div className="mx-auto flex flex-col items-center gap-4 text-center">
             <img
@@ -92,31 +115,50 @@ export default function StoryReader() {
           </div>
         )}
 
-        {hasPrev && (
-          <button
-            onClick={() => setPage(page - 1)}
-            className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow"
-            aria-label={t.previousPage}
-          >
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </button>
-        )}
-        {hasNext ? (
-          <button
-            onClick={() => setPage(page + 1)}
-            className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow"
-            aria-label={t.nextPage}
-          >
-            <FontAwesomeIcon icon={faArrowRight} />
-          </button>
-        ) : null}
       </div>
 
-      {!isCover && !isGlossary && (
-        <p className="mt-3 text-center text-sm text-gray-500">
-          {page + 1} / {story.pages.length}
-        </p>
-      )}
+      <nav className="mt-6 flex items-center justify-center gap-4" aria-label={t.pagination}>
+        <button
+          type="button"
+          onClick={goPrev}
+          disabled={!hasPrev}
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-white shadow-md transition-opacity disabled:cursor-not-allowed disabled:opacity-40 enabled:hover:opacity-80"
+          aria-label={t.previousPage}
+        >
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </button>
+
+        <div className="flex items-center gap-2.5">
+          {Array.from({ length: totalSteps }).map((_, index) => {
+            const target = index - 1
+            const active = target === page
+            return (
+              <button
+                key={index}
+                type="button"
+                onClick={() => setPage(target)}
+                className={
+                  active
+                    ? 'h-3 w-3 rounded-full bg-accent'
+                    : 'h-3 w-3 rounded-full bg-gray-300 transition-colors hover:bg-gray-400'
+                }
+                aria-label={`${t.goToPage} ${index + 1}`}
+                aria-current={active ? 'true' : undefined}
+              />
+            )
+          })}
+        </div>
+
+        <button
+          type="button"
+          onClick={goNext}
+          disabled={!hasNext}
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-white shadow-md transition-opacity disabled:cursor-not-allowed disabled:opacity-40 enabled:hover:opacity-80"
+          aria-label={t.nextPage}
+        >
+          <FontAwesomeIcon icon={faArrowRight} />
+        </button>
+      </nav>
     </div>
   )
 }

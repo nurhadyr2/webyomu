@@ -410,6 +410,14 @@
                                          {
                                              "term":  "におい",
                                              "meaning":  "bau, aroma"
+                                         },
+                                         {
+                                             "term":  "バニュ",
+                                             "meaning":  "air (istilah bahasa Jawa)"
+                                         },
+                                         {
+                                             "term":  "ワンギ",
+                                             "meaning":  "harum, wangi (istilah bahasa Jawa)"
                                          }
                                      ]
                        }
@@ -469,7 +477,7 @@
                                              },
                                              {
                                                  "term":  "りゅう",
-                                                 "meaning":  "naga (sudah pernah muncul di teks Rawa Pening)"
+                                                 "meaning":  "naga"
                                              },
                                              {
                                                  "term":  "力[ちから]",
@@ -522,6 +530,14 @@
                                        {
                                            "term":  "土[つち]",
                                            "meaning":  "tanah"
+                                       },
+                                       {
+                                           "term":  "アセム",
+                                           "meaning":  "pohon asam (istilah bahasa Jawa)"
+                                       },
+                                       {
+                                           "term":  "アランアラン",
+                                           "meaning":  "jauh (istilah bahasa Jawa)"
                                        }
                                    ]
                      }
@@ -913,7 +929,7 @@
                                                   },
                                                   {
                                                       "term":  "タリ・プルスンバハン",
-                                                      "meaning":  "nama tarian perayaan/persembahan (dari daerah cerita ini)"
+                                                      "meaning":  "nama tarian perayaan/persembahan (dari daerah Riau)"
                                                   },
                                                   {
                                                       "term":  "あい",
